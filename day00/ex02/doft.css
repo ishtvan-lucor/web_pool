@@ -75,13 +75,16 @@ div {
 #arrow, #main {
     height: 70px;
     margin-left: 32px;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+#main {
+    margin-top: 6px;
 }
 #oeil{
     border: red;
     border-style: solid;
     margin-left: 27px;
-    margin-top: 5px;
+    margin-top: 1px;
     height: 65px;
     border-width: 5px;
     border-radius: 5px;
@@ -89,12 +92,12 @@ div {
 #outil{
     height: 70px;
     margin-left: 32px;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 #chat-icon{
     height: 68px;
     margin-left: 32px;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 #book {
     height: 96px;
@@ -103,12 +106,12 @@ div {
 }
 #towel {
     height: 52px;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 35px;
 }
 #brick {
     background-image: url(resources/brick.jpg);
-    margin-top: 5px;
+    margin-top: 1px;
     margin-left: 10px;
     width: 120px;
     height: 70px;
@@ -116,49 +119,52 @@ div {
     box-shadow: 0px 0px;
 }
 #text {
-     margin-top: 7px;
+     margin-top: 8px;
      margin-left: 10px;
      font-size: 16px;
-     font-family: Verdana;
+     font-weight: 100;
+     font-family: Verdana, serif;
      background-color: #88ff89;
      border-radius: 0px;
      box-shadow: 0px 0px;
  }
 #shit1 {
     font-family: Georgia, serif;
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 0px;
+    font-size: 33px;
+    margin-left: -5px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
 }
 #shit2 {
     font-size: 16px;
-    font-family: Verdana;
-    text-shadow: 5px 5px 6px #b37650;
+    font-family: Verdana, serif;
+    margin-top: -2px;
+    text-shadow: 5px 5px 4px #b37650;
 }
 #italic {
     font-style: italic;
     margin-left: -2px;
-    margin-top: -1px;
+    margin-top: 1px;
+    padding-top: -2px;
     letter-spacing: -0.16px;
     background-color: #88ff89;
     border-radius: 0px;
     box-shadow: 0px 0px;
 }
-
 #text-area {
-    margin-top: 0px;
+    margin-top: -5px;
     margin-left: 12px;
     border-width: 2px;
     border-top-color: #eeeeee;
-    width: 382px;
-    height: 21px;
+    width: 377px;
+    height: 15px;
 }
 #button {
     margin-left: 3.9px;
     margin-top: 85px;
     width: 79px;
-    height: 22px;
-    font-family: verdana;
+    height: 21px;
+    font-family: verdana, serif;
     font-size: 13px;
     background: #f3f1f2;
     border-color: #9f9f9f;
