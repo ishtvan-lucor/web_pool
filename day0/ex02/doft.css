@@ -1,0 +1,174 @@
+body {
+    background-color: #505050;
+}
+header {
+    background-color: #909090;
+    width: 1420px;
+    height: 137px;
+    margin-top: 18px;
+    margin-left: 230px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px;
+}
+div {
+    background-color: #909090;
+    position: absolute;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px;
+}
+.left {
+    margin-left: 260px;
+}
+.middle {
+    margin-left: 430px;
+    width: 1020px;
+    height: 582px;
+}
+.right {
+    margin-left: 1480px;
+}
+.side {
+    width: 140px;
+    height: 425px;
+}
+.form {
+    background-color: #88ff89;
+    position: absolute;
+    width: 520px;
+    height: 170px;
+    margin-top: 526px;
+    margin-left: 185px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px;
+}
+.img {
+    margin-top: 5px;
+}
+#cluster {
+    width: 1000px;
+    height: 562px;
+    margin: 10px;
+}
+#day_42 {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 110px;
+}
+#reload {
+    position: absolute;
+    margin-left: 954px;
+    margin-top: 10px;
+    height: 20px;
+}
+#close {
+    position: absolute;
+    margin-left: 954px;
+    margin-top: 107px;
+    height: 20px;
+}
+#loupe {
+    position: absolute;
+    margin-left: 698px;
+    margin-top: 10px;
+}
+#arrow, #main {
+    height: 70px;
+    margin-left: 32px;
+    margin-top: 15px;
+}
+#main {
+    margin-top: 6px;
+}
+#oeil{
+    border: red;
+    border-style: solid;
+    margin-left: 27px;
+    margin-top: 1px;
+    height: 65px;
+    border-width: 5px;
+    border-radius: 5px;
+}
+#outil{
+    height: 70px;
+    margin-left: 32px;
+    margin-top: 1px;
+}
+#chat-icon{
+    height: 68px;
+    margin-left: 32px;
+    margin-top: 6px;
+}
+#book {
+    height: 96px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+#towel {
+    height: 52px;
+    margin-top: 6px;
+    margin-left: 35px;
+}
+#brick {
+    background-image: url(resources/brick.jpg);
+    margin-top: 1px;
+    margin-left: 10px;
+    width: 120px;
+    height: 70px;
+    border-radius: 0px;
+    box-shadow: 0px 0px;
+}
+#text {
+     margin-top: 8px;
+     margin-left: 10px;
+     font-size: 16px;
+     font-weight: 100;
+     font-family: Verdana, serif;
+     background-color: #88ff89;
+     border-radius: 0px;
+     box-shadow: 0px 0px;
+ }
+#shit1 {
+    font-family: Georgia, serif;
+    font-size: 33px;
+    margin-left: -5px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+#shit2 {
+    font-size: 16px;
+    font-family: Verdana, serif;
+    margin-top: -2px;
+    text-shadow: 5px 5px 4px #b37650;
+}
+#italic {
+    font-style: italic;
+    margin-left: -2px;
+    margin-top: 1px;
+    padding-top: -2px;
+    letter-spacing: -0.16px;
+    background-color: #88ff89;
+    border-radius: 0px;
+    box-shadow: 0px 0px;
+}
+#text-area {
+    margin-top: -5px;
+    margin-left: 12px;
+    border-width: 2px;
+    border-top-color: #eeeeee;
+    width: 377px;
+    height: 15px;
+}
+#button {
+    margin-left: 3.9px;
+    margin-top: 85px;
+    width: 79px;
+    height: 21px;
+    font-family: verdana, serif;
+    font-size: 13px;
+    background: #f3f1f2;
+    border-color: #9f9f9f;
+    border-width: 2px;
+    border-radius: 2px;
+    text-align: center;
+}
