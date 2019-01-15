@@ -1,0 +1,83 @@
+body {
+    font: 18px 'Verdana';
+    background-color: #afeaed;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #ed57c0;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: #f7717f;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid blueviolet;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: slateblue;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+ul.double_menu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid gold;
+    margin-left: 120px;
+}
+ul.double_menu > li {
+    display: block;
+}
+ul.double_menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: yellowgreen;
+    text-decoration: none;
+}
+ul.double_menu > li > a:hover {
+    text-decoration: underline;
+}
+ul.submenu > li:hover > ul.double_menu {
+    display: block;
+}
