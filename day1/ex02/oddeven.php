@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
     while (TRUE) {
 		print("Enter a number: ");
