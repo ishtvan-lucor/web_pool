@@ -2,7 +2,6 @@
 <?php
 	function my_compare($str1, $str2) {
 		$sort_logic = "abcdefghijklmnoprstuvwxyz0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-
 		for ($i = 0; $str1[$i] && $str2[$i]; $i++) {
 			$location1 = strpos($sort_logic, strtolower($str1[$i]));
 			$location2 = strpos($sort_logic, strtolower($str2[$i]));
@@ -17,7 +16,6 @@
 		}
 		return (FALSE);
 	}
-
 	$arr = array();
 	array_shift($argv);
 	foreach ($argv as $value) {
@@ -30,12 +28,9 @@
 	for ($iter = 0; $iter < $arr_length; $iter++) {
 		for ($index = 0; $index < $arr_length; $index++) {
 			if (my_compare($arr[$index], $arr[$index + 1])) {
-//				echo "element1 = ".$arr[$index]." --element2 = ".$arr[$index+1],"\n";
 				$temp = $arr[$index];
 				$arr[$index] = $arr[$index + 1];
 				$arr[$index + 1] = $temp;
-//				echo "temp === ".$temp."\n";
-				//print_r($arr);
 			}
 		}
 	}
