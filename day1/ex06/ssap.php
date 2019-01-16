@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-	unset($argv[0]);
+	array_shift($argv);
 	$arr = array();
 	foreach ($argv as $value) {
 		$temp = array_filter(explode(' ', $value));
