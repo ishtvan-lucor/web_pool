@@ -37,5 +37,3 @@
     else {
         echo $result."\n";
     }
-
-
