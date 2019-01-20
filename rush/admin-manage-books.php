@@ -3,12 +3,18 @@
 	<head>
 		<title>Modify product</title>
 		<meta charset="utf-8">
+		<style>
+			body {
+				background-color:#afeaed;
+			}
+
+		</style>
 	</head>
 	<body>
 		<header>
-			<a href="#" ></a>
-			<a href="#" ></a>
-			<a href="#" ></a>
+            <a href="admin-manage-books.php" >Manage books</a>
+            <a href="admin-user-manage.php" >Manage users</a>
+            <a href="admin-manage-books.php" >Manage basket</a>
 		</header>
 		<?php
 			require_once "connect-db.php";
@@ -23,13 +29,17 @@
 			if ($port == FALSE) {
 				echo "fail DB\n";
 			}
-			if (isset($_POST["delete"]) == "del" && isset($_POST["id"])) {
+			if ($_POST["submit"] == "DELETE BOOK") {
 				$id = prepare_for_sql($port, "id");
 				$query = "DELETE FROM `book-shop` WHERE id='$id'";
 				$result = mysqli_query($port, $query);
 				if (!$result) {
 					echo "No DELETE. fail DB\n";
 				}
+			}
+			if ($_POST["submit"] == "MODIFY BOOK") {
+				$id_put = $_POST["id"];
+				header("Location: modif-data.php?id=$id_put");
 			}
 			if ($_POST["submit"] == "ADD BOOK" &&
 				$_POST["name"] != NULL && $_POST["descript"] != NULL &&
@@ -46,9 +56,10 @@
 				$query = "INSERT INTO `book-shop` " . "(`name`, `descript`, `price`, `img`, `amount`, `category`)".
 				" VALUES " . "('$name', '$descript', $price, '$img', $amount, '$category')";
 				$result = mysqli_query($port, $query);
-				if (!$result) echo "INSERT failed: $query<br>" .
-					mysqli_error($port) . "<br><br>";
-					var_dump($_POST);
+				if (!$result) {
+					echo "INSERT failed: $query<br>" .
+						mysqli_error($port) . "<br><br>";
+				}
 			}
 			echo <<<_END
 <div><form action="admin-manage-books.php" method="post"><pre>
@@ -63,7 +74,6 @@
 </form></div>	
 _END;
 
-		$query = "SELECT * FROM 'book-shop'";
 		$result = mysqli_query($port, "SELECT * FROM `book-shop`");
 		if (!$result) {
 			echo "fail DB\n";
@@ -84,8 +94,9 @@ _END;
 	<input type="hidden" name="delete" value="del">
 	<input type="hidden" name="id" value="$row[0]">
 	<input type="submit" name="submit" value="DELETE BOOK">
-	<hr>
+	<input type="submit" name="submit" value="MODIFY BOOK"> 
 </form>
+<hr>
 _END;
 		}
 		mysqli_close($port);

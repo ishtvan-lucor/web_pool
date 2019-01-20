@@ -6,7 +6,6 @@
 
 		$result = mysqli_query($port, "SELECT * FROM `book-shop`");
 		$data = mysqli_fetch_array($result);
-		//print_r(mysqli_fetch_array($result));
 		mysqli_close($port);
 		return ($data);
 	}

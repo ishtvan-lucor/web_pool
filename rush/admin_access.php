@@ -6,7 +6,7 @@
 	if ($_POST["login"] && $_POST["pass"] && $_POST["submit"] == "OK") {
 		if ($_POST["login"] == "admin" && $_POST["pass"] == "0987654321") {
 			$_SESSION["user_online"] = "ADMIN_HERE";
-			header("test.php",TRUE,301);
+			header("admin-user-manage.php",TRUE,301);
 		}
 	}
 	else {
