@@ -17,7 +17,7 @@ class Vertex
 		if (array_key_exists('w', $kwarg)) {
 			$this->_w = $kwarg['w'];
 		}
-		if (array_key_exists('color', $kwarg)) {
+		if (array_key_exists('color', $kwarg) && $kwarg['color'] instanceof Color) {
 			$this->_color = $kwarg['color'];
 		}
 		else {
@@ -31,7 +31,7 @@ class Vertex
 	public function __destruct()
 	{
 		if (self::$verbose) {
-			printf("Vertex ( x: %.2f, y: %.2f, z:%.2f, w:%.2f, ".$this->_color." ) destructed\n",
+			printf("Vertex( x: %.2f, y: %.2f, z:%.2f, w:%.2f, ".$this->_color." ) destructed\n",
 				$this->_x, $this->_y, $this->_z, $this->_w, $this->_color);
 		}
 	}
