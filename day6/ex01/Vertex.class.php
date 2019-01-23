@@ -1,7 +1,5 @@
 <?php
 
-require_once 'Color.class.php';
-
 class Vertex
 {
 	public static $verbose = FALSE;
