@@ -1,0 +1,13 @@
+<- Vertex ----------------------------------------------------------------------
+Man --->  print( Vertex::doc() );
+
+You can add data like on exemple:
+Vertex( array( 'x' => 9.0, 'y' => 9.0, 'z' => 9.0, 'w' => 3.0, 'color' => $green ) ) );
+x, y, z is mandatory arguments;
+w by default = 1.0;
+color by default = white;
+
+magic methods: construct, destruct and toString;
+simple methods get and set to all arguments -- one by one access,
+like getX(), setColor($color) etc.
+---------------------------------------------------------------------- Vertex ->

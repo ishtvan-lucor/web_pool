@@ -12,9 +12,9 @@ class Color
 	public function __construct(array $kwargs)
 	{
 		if (array_key_exists('rgb', $kwargs)) {
-			$this->blue = intval($kwargs['rgb'] % BASE);
-			$this->green = intval($kwargs['rgb'] / BASE % BASE);
-			$this->red = intval($kwargs['rgb'] / BASE % BASE);
+			$this->blue = intval($kwargs['rgb']) % BASE;
+			$this->green = intval($kwargs['rgb']) / BASE % BASE;
+			$this->red = intval($kwargs['rgb']) / (BASE * BASE) % BASE;
 		}
 		else if (array_key_exists('red', $kwargs) &&
 		array_key_exists('green', $kwargs) &&
