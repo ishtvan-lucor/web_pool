@@ -1,0 +1,29 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class manage; x, y, z - magnitudes + w coordinate.
+
+new Vector( array( 'orig' => $vtxO, 'dest' => $vtxX ) );
+'orig' - start of vector, 'dest' - end coordinate;
+
+Methods:
+
+1. float magnitude() - returns the vector’s length (or "norm").
+
+2. Vector normalize() - returns a normalized version of the vector.
+   If the vector is already normalized, returns a fresh copy of the vector.
+
+3. Vector add( Vector $rhs ) - returns the sum vector of both vectors.
+
+4. Vector sub( Vector $rhs ) - returns the difference vector of both vectors.
+
+5. Vector opposite() - returns the opposite vector.
+
+6. Vector scalarProduct( $k ) - returns the multiplication of the vector with a scalar.
+
+7. float dotProduct( Vector $rhs ) - returns the scalar multiplication of both vec- tors.
+
+8. float cos( Vector $rhs ) - returns the angle’sAppendix cosine between both vec- tors.
+
+9. Vector crossProduct( Vector $rhs ) - returns the cross multiplication of both vectors (right-hand mark!)
+
++ getX(), getY(), getZ(), getW() =)
+---------------------------------------------------------------------- Vector ->

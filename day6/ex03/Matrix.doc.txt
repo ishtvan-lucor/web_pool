@@ -1,0 +1,19 @@
+<- Matrix ----------------------------------------------------------------------
+A Matrix class operate transformations, such as apply
+a scale change, a translation or a rotation to one or several vertices.
+
+new Matrix( array( 'preset' => Matrix::[preset], [key] => [value]) );
+
+preset => IDENTITY | SCALE | RX | RY | RZ | TRANSLATION | PROJECTION
+
+RX | RY | RZ - > angle
+
+TRANSLATION - > vtc
+
+PROJECTION - > fov ,ratio ,near, far
+
+Methods:
+mult(Matrix $rhs);
+transformVertex(Vertex $vtx);
+
+---------------------------------------------------------------------- Matrix ->
