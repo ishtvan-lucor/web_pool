@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        form {
+            margin: auto;
+            background: blueviolet;
+            width: 50vw;
+            height: 30vh;
+            border-radius: 10px;
+        }
+        input {
+            margin-left: 10vw;
+            margin-top: 1vh;
+            width: 30vw;
+            height: 5vh;
+            background: goldenrod;
+            border-radius: 10px;
+        }
+        select {
+            margin-left: 20vw;
+            margin-top: 1vh;
+            width: 10vw;
+            height: 5vh;
+            background: #43A047;
+        }
+        #calc {
+            margin-top: 2vh;
+            background-color: #b36ea4;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function calculate() {
+            let first = Number(document.getElementById("first").value);
+            let second = Number(document.getElementById("second").value);
+            let sign = document.getElementById("sign").value;
+            let result;
+
+            if (!Number.isInteger(first) || !Number.isInteger(second)) {
+                alert("Error :(");
+            } else if (second === 0 && (sign === "div" || sign === "mod")) {
+                console.log("It’s over 9000!");
+                alert("It’s over 9000!");
+            } else if (first >= 0 && second >= 0) {
+                if (sign === "plus") {
+                    result = first + second;
+                } else if (sign === "minus") {
+                    result = first - second;
+                } else if (sign ==="mult") {
+                    result = first * second;
+                } else if (sign === "div") {
+                    result = first / second;
+                } else if (sign === "mod") {
+                    result = first % second;
+                }
+                console.log(result);
+                alert(result);
+            } else {
+                alert("Error :(");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="calculator">
+        <input type="text" title="first" id="first" value="">
+        <select title="sign" id="sign">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="mult">*</option>
+            <option value="div">/</option>
+            <option value="mod">%</option>
+        </select>
+        <input type="text" title="second" value="" id="second">
+        <input id="calc" type="submit" title="submit" value="Try me!" onclick="calculate()">
+    </form>
+</body>
+</html>
