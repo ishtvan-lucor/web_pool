@@ -12,7 +12,7 @@ function createTask() {
 
 function deleteTask(div, id) {
     if (confirm("You really did this task?")) {
-        let deathTime = new Date(new Date().getTime() + (-1));
+        let deathTime = new Date(-1);
 
         document.getElementById("ft_list").removeChild(div);
         document.cookie = id + "=delete; path=/; expires=" + deathTime.toUTCString();
@@ -35,7 +35,7 @@ window.onload = function() {
         let parametrs = document.cookie.split(';');
         let temp;
 
-        for (i = 0; i < parametrs.length; i++ ) {
+        for (let i = 0; i < parametrs.length; i++ ) {
             temp = parametrs[i].split('=');
             addTask(temp[1], temp[0]);
         }
