@@ -17,16 +17,14 @@
     <div id="balloon"></div>
     <script>
         let objectBalloon = document.getElementById("balloon");
-        //let size = document.getElementById("balloon").style.width;
         let size = 200;
         let color = 0;
-        let colorRange = array('red', 'green', 'blue');
+        let colorRange = ['red', 'green', 'blue'];
 //todo array right init
         objectBalloon.addEventListener('click', balloonBigger);
         objectBalloon.addEventListener("mouseout", balloonSmaller);
 
         function balloonBigger() {
-           // alert(size);
             if (size > 415) {
                 size = 200;
             } else {
