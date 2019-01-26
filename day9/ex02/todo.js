@@ -6,7 +6,6 @@ function createTask() {
         let uId = date.getTime();
 
         document.cookie = uId + "=" + encodeURIComponent(task) + "; path=/; expires=" + date.toUTCString();
-                      console.log(uId);
         addTask(task, uId);
     }
 }
