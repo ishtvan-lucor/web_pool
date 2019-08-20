@@ -1,6 +1,6 @@
 # web_pool
 
-There are represented tasks done by me during  2 weeks intense program called "pool" in web technologies.
+There are represented tasks done by me during  2 weeks intensive program called "pool" in web technologies.
 + Day00 - HTML/CSS
 + Day01-Day04 - PHP
 + Day05 - SQL
